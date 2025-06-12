@@ -41,7 +41,7 @@ def format_alpaca_prompt(instruction, input_text, output=""):
 # Gelecek senaryosunu oluşturacak fonksiyon
 def gelecek_senaryosu_olustur(ongoruler):
     try:
-        instruction = """Verilen öngörülere dayalı olarak 2050 yılına yönelik detaylı bir gelecek senaryosu yaz. Senaryo en fazla 100 kelime uzunluğunda olsun. Hikaye formatında, akıcı ve yaratıcı bir anlatım oluştur.Dil bilgisi kurallarına dikkat et. Senaryoyu "teşekkür ederim" ile bitir. """
+        instruction = """Verilen öngörülere dayalı olarak 2050 yılına yönelik detaylı bir gelecek senaryosu yaz. Senaryo en fazla 100 kelime uzunluğunda olsun. Hikaye formatında, akıcı ve yaratıcı bir anlatım oluştur.Dil bilgisi kurallarına dikkat et."""
         
         input_text = f"Öngörüler: {ongoruler}"
         formatted_prompt = format_alpaca_prompt(instruction, input_text, "")
